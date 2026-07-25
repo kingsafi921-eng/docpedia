@@ -1,0 +1,67 @@
+a:hover{
+	color: blue;
+}
+
+.width{
+	    width: 315px;
+}
+.left{
+	left: 150px;
+}
+
+.margin{
+	margin:100px;
+}
+
+.doc img{
+    margin-top: 0px;
+    background-size: cover;
+    height: 170px;
+    width: 170px;
+    border-radius: 5px;
+}
+.doct{
+	margin-top: 40px;
+}
+.mar{
+    margin-top: 40px;
+}
+
+hr{
+	margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.marg{
+    margin-top: 40px;
+}
+.col-md-10{
+	background-color: #f1f1f1;
+	border-radius: 10px;
+
+}
+.thum a img{
+	height: 260px;
+}
+.infoHeight{
+	height: 300px;
+}
+.mar img{
+	margin-top: 20px;
+}.file {
+  position: relative;
+  overflow: hidden;
+}
+.ifile {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}

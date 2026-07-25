@@ -1,0 +1,335 @@
+<?php include('header.php');?>
+<?php include('connect.php');?>
+<div class="margin">
+    <div id="page-title" class="padding-tb-30px gradient-white">
+        <div class="container">
+            <ol class="breadcrumb opacity-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">Doctors List</li>
+            </ol>
+            <h1 class="font-weight-300">Doctors List</h1>
+        </div>
+    </div>
+
+
+    <div class="margin-tb-30px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <div class="row">
+            <?php 
+            $img = mysqli_query($connect,"SELECT img,doc_name,spec,exp,doc_id  FROM `doctors`");
+            while($row = mysqli_fetch_array($img)){ ?>
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="single.php?hid=<?= $row['doc_id']; ?>"><img src="images/uploads/<?php echo $row['img']?>"></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="single.php?hid=<?= $row['doc_id']; ?>"><?php echo $row['doc_name']?></a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+<?php } ?>
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-2.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Adwa Ali</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-3.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Salim alhasimi</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-4.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Ahmed baslawy</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-5.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Ali Alamine</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-6.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Jamal Comlay</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-7.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Tarig Tgani</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-8.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Slwa Aljaili</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+
+
+
+                        <!-- Doctor -->
+                        <div class="col-lg-4 col-md-6 hvr-bob margin-bottom-45px">
+                            <div class="background-white box-shadow">
+                                <div class="thum">
+                                    <a href="#"><img src="assets/img/doctor-3.jpg" alt=""></a>
+                                </div>
+                                <div class="padding-30px">
+                                    <span class="text-grey-2">Internal</span>
+                                    <h5 class="margin-tb-15px"><a class="text-dark" href="#">Dr. Omer abdalrahman</a></h5>
+                                    <div class="rating clearfix">
+                                        <ul class="float-left">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Doctor -->
+                    </div>
+                    
+                    <ul class="pagination pagination-md ">
+                        <li class="page-item disabled"><a class="page-link rounded-0" href="#" tabindex="-1">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link rounded-0" href="#">Next</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="background-white border-radius-10 margin-bottom-45px">
+                        <div class="padding-25px">
+                            <h3 class="margin-lr-20px"><i class="fas fa-search margin-right-10px text-main-color"></i> Search Filter</h3>
+                            <!-- Listing Search -->
+                            <div class="listing-search">
+                                <form>
+                                    <div class="keywords margin-bottom-20px">
+                                        <input class="listing-form first border-radius-10" type="text" placeholder="Keywords..." value="">
+                                    </div>
+                                    <div class="regions margin-bottom-20px">
+                                        <input class="listing-form border-radius-10" type="text" placeholder="All Regions" value="">
+                                    </div>
+
+                                    <div class="categories dropdown margin-bottom-20px">
+                                        <a class="listing-form d-block border-radius-10" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="dropdown-item text-up-small" type="button">Doctors</button>
+                                            <button class="dropdown-item text-up-small" type="button">Clinics</button>
+                                            <button class="dropdown-item text-up-small" type="button">Pharmacies</button>
+                                            <button class="dropdown-item text-up-small" type="button">Labs</button>
+                                        </div>
+                                    </div>
+                                    <a class="listing-bottom background-dark box-shadow border-radius-10" href="#">Search Now</a>
+                                </form>
+                            </div>
+                            <!-- // Listing Search -->
+                        </div>
+                    </div>
+
+
+                    <div class="featured-categorey">
+                        <div class="row">
+                            <div class="col-6 margin-bottom-30px wow fadeInUp">
+                                <a href="doctor.php" class="d-block border-radius-15 hvr-float hvr-sh2">
+                                    <div class="background-main-color text-white border-radius-15 padding-30px text-center opacity-hover-7">
+                                        <div class="icon margin-bottom-15px opacity-7">
+                                            <img src="assets/img/icon/categorie-1.png" alt="">
+                                        </div>
+                                        Doctors
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 margin-bottom-30px wow fadeInUp" data-wow-delay="0.2s">
+                                <a href="clinics.php" class="d-block border-radius-15 hvr-float hvr-sh2">
+                                    <div class="background-main-color text-white border-radius-15 padding-30px text-center opacity-hover-7">
+                                        <div class="icon margin-bottom-15px opacity-7">
+                                            <img src="assets/img/icon/categorie-2.png" alt="">
+                                        </div>
+                                        Clinics
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="laboratories.php" class="d-block border-radius-15 hvr-float hvr-sh2">
+                                    <div class="background-main-color text-white border-radius-15 padding-30px text-center opacity-hover-7">
+                                        <div class="icon margin-bottom-15px">
+                                            <img src="assets/img/icon/categorie-3.png" alt="">
+                                        </div>
+                                        Labs
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 wow fadeInUp" data-wow-delay="0.6s">
+                                <a href="pharmacies.php" class="d-block border-radius-15 hvr-float hvr-sh2">
+                                    <div class="background-main-color text-white border-radius-15 padding-30px text-center opacity-hover-7">
+                                        <div class="icon margin-bottom-15px opacity-7">
+                                            <img src="assets/img/icon/categorie-4.png" alt="">
+                                        </div>
+                                        Pharmacies
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php include('footer.php');?>
